@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>inline div</title>
+    <style>
+        .box1{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .box-group {
+            display: flex;
+        }
+        .box2{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div id="first-way">
+        <h1>
+            first way css display inline
+        </h1>
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+    </div>
+
+    <div id="second-way">
+        <h1>second way flexbox</h1>
+        <div class="box-group">
+            <div class="box2">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+        </div>
+    </div>
+</body>
+</html>
